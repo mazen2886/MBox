@@ -1,0 +1,6 @@
+framework module Pods_MBox {
+  umbrella header "Pods-MBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,9 +13,12 @@
 		3B97801820DB3BD400A516E7 /* MBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B97801620DB3BD400A516E7 /* MBox.xcdatamodeld */; };
 		3B97801A20DB3BD500A516E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97801920DB3BD500A516E7 /* Assets.xcassets */; };
 		3B97801D20DB3BD600A516E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B97801B20DB3BD600A516E7 /* LaunchScreen.storyboard */; };
+		3BCCF19A20DBEC7600A44521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BCCF19920DBEC7500A44521 /* GoogleService-Info.plist */; };
+		47991523829F64F3410E7BC5 /* Pods_MBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4552051DE8DCC1F6684E4 /* Pods_MBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132CE71AF20B08068E8FB6B4 /* Pods-MBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBox/Pods-MBox.debug.xcconfig"; sourceTree = "<group>"; };
 		3B97800C20DB3BD400A516E7 /* MBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B97800F20DB3BD400A516E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B97801120DB3BD400A516E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		3B97801920DB3BD500A516E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B97801C20DB3BD600A516E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B97801E20DB3BD600A516E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCCF19920DBEC7500A44521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DC4552051DE8DCC1F6684E4 /* Pods_MBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8B679538063CA9AF78E505 /* Pods-MBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBox/Pods-MBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47991523829F64F3410E7BC5 /* Pods_MBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3B97800E20DB3BD400A516E7 /* MBox */,
 				3B97800D20DB3BD400A516E7 /* Products */,
+				950D776715AEF3C38EB69E3E /* Pods */,
+				5D1ED9EC686AFFDB9E839743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +71,27 @@
 				3B97801920DB3BD500A516E7 /* Assets.xcassets */,
 				3B97801B20DB3BD600A516E7 /* LaunchScreen.storyboard */,
 				3B97801E20DB3BD600A516E7 /* Info.plist */,
+				3BCCF19920DBEC7500A44521 /* GoogleService-Info.plist */,
 				3B97801620DB3BD400A516E7 /* MBox.xcdatamodeld */,
 			);
 			path = MBox;
+			sourceTree = "<group>";
+		};
+		5D1ED9EC686AFFDB9E839743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4552051DE8DCC1F6684E4 /* Pods_MBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950D776715AEF3C38EB69E3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				132CE71AF20B08068E8FB6B4 /* Pods-MBox.debug.xcconfig */,
+				BC8B679538063CA9AF78E505 /* Pods-MBox.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B97802120DB3BD600A516E7 /* Build configuration list for PBXNativeTarget "MBox" */;
 			buildPhases = (
+				C4966E5959E6EC9942CBD770 /* [CP] Check Pods Manifest.lock */,
 				3B97800820DB3BD400A516E7 /* Sources */,
 				3B97800920DB3BD400A516E7 /* Frameworks */,
 				3B97800A20DB3BD400A516E7 /* Resources */,
@@ -126,12 +154,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B97801D20DB3BD600A516E7 /* LaunchScreen.storyboard in Resources */,
+				3BCCF19A20DBEC7600A44521 /* GoogleService-Info.plist in Resources */,
 				3B97801A20DB3BD500A516E7 /* Assets.xcassets in Resources */,
 				3B97801520DB3BD400A516E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4966E5959E6EC9942CBD770 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B97800820DB3BD400A516E7 /* Sources */ = {
@@ -282,6 +332,7 @@
 		};
 		3B97802220DB3BD600A516E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132CE71AF20B08068E8FB6B4 /* Pods-MBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +350,7 @@
 		};
 		3B97802320DB3BD600A516E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8B679538063CA9AF78E505 /* Pods-MBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
